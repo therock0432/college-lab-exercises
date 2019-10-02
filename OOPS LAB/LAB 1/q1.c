@@ -1,17 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int i,j;
-    scanf("%d",&i);
-    scanf("%d",&j);
-    	int k=i%j;
+    long long int i,j;
+    scanf("%d %d",&i,&j);
+    	long long int k=i%j;
     	if(k==0)
-    	{
-    		printf("%d",i+j);
-    	}
+    		printf("%d\n",i+j);
     	else
-    	{
-    		i=i+(j-k);
+       {
+           i=i+(j-k);
     		printf("\n%d",i);
-    	}
+}
+      return 0;
 }
